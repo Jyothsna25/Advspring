@@ -1,0 +1,17 @@
+package com.sathya.lombok;
+
+import lombok.AllArgsConstructor;
+
+import lombok.ToString;
+
+@AllArgsConstructor
+@ToString
+public class Employee 
+{
+
+	
+	private int empid;
+	private String empname;
+	private double empsalary;
+	
+}

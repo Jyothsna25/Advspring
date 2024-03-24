@@ -1,0 +1,18 @@
+package com.sathya.springEx;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.sathya.springEx.javabased2.javaconfig;
+import com.sathya.springEx.javabased2.student;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+ApplicationContext context= new AnnotationConfigApplicationContext(javaconfig.class);
+        
+        student student=context.getBean("student",student.class);
+        student.details();
+    }
+}

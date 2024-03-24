@@ -1,0 +1,12 @@
+package com.sathya.lombok;
+
+public class Test {
+
+	public static void main(String[] args) 
+	{
+	 Employee e1 =new Employee(10,"anu",1000.45);
+	 System.out.println(e1);
+
+	}
+
+}
